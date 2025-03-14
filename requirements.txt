@@ -6,3 +6,4 @@ langchain-community
 sqlalchemy
 python-dotenv
 urllib3
+pymysql
