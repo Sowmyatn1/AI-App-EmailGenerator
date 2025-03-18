@@ -13,6 +13,9 @@ from sqlalchemy.exc import SQLAlchemyError
 # Set Streamlit page configuration
 st.set_page_config(page_title="SQL Genie: Ask & Query! – Fun and interactive.")
 
+# Display the app name as a title within the app
+st.title("SQL Genie: Ask & Query! – Fun and interactive.")
+
 #this code belongs to sql db query and generating email project .make sure below files are in the project
 #generate_email.py,llm_agent.py,sqlapp.py
 
@@ -69,6 +72,7 @@ def test_connection(config):
     try:
         # Test connection using SQLAlchemy
         connection_string = f"mysql+pymysql://{config['user']}:{config['password']}@{config['host']}:{config['port']}/{config['database']}"
+        
         print(f"Connection string: {connection_string}")
         engine = create_engine(connection_string)
         with engine.connect() as conn:

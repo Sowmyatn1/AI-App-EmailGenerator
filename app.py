@@ -8,7 +8,7 @@ import PyPDF2
 
 
 
-#this file has code which will take user question and generate  email for that.yhis is a standalone code which has a UI to diaplay the result 
+#this file has code which will take user question and generate  email for that.yhis is a standalone code which has a UI to display the result 
 #run this as a streamlit run app.py 
 
 # Load environment variables from .env file
@@ -64,6 +64,9 @@ def GenerateEmailFromOpenAI(user_input, email_tone, email_length, email_purpose,
     - Ends with "Thanks and Regards, [Your Name]"
     - Is **concise yet complete** (no unfinished sentences)
     - Is professional and well-structured
+    - The email should not be cut off midway and should provide a complete message within the specified length
+    - If necessary, adjust the content to meet the token limit without losing meaning.
+    - If you reach the token limit, gracefully truncate at a logical stopping point without breaking sentences.
     """
  
     response = client.chat.completions.create(
