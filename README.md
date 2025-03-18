@@ -16,7 +16,7 @@ Email Generation: Generates email templates based on SQL query results using Ope
 
 Session State Management: Maintains query and result history to enhance user interaction.
 
-# **System Diagram**
+## **System Diagram**
 
 ![System Diagram](SystemDiagram-1.png)
 
