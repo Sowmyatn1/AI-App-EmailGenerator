@@ -4,6 +4,9 @@
 
 SQL Genie is an interactive Streamlit-powered application that allows users to interact with a SQL database through natural language queries. The application utilizes an AI agent to generate SQL queries, execute them against a MySQL database, and return results in a user-friendly format. Additionally, SQL Genie can generate AI-driven email templates based on query results.
 
+## Youtube Link
+https://www.youtube.com/watch?v=rifjFRYoAE4&t=11s
+
 ## Features
 
 AI-Powered SQL Query Execution: Converts natural language questions into SQL queries and retrieves results.
